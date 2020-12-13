@@ -1,0 +1,231 @@
+* {box-sizing: border-box;}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+	background-color:#000000; /* can use colourzilla extension on chrome or photoshop */
+}
+/* Style the header */
+header {
+    background-color:#0dff05;
+    padding: 15px;
+    text-align: center;
+    font-size: 35px;
+}
+
+header h1{
+	font-size:4.4vw;
+	
+}	
+
+p{
+	line-height:1.5;
+	color: #ffffff
+	
+}
+
+.floatleft{
+	float:left;
+}
+
+.floatright{
+	float:right;
+}
+
+/* Create three equal columns that floats next to each other */
+.column3 {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    min-height: 200px; /* Should be removed. Only for demonstration */
+}
+.column2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    min-height: 200px; /* Should be removed. Only for demonstration */
+}
+/* Clear floats after the columns - this uses the after psuedo element to clear the floats */
+.row:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logo{
+	width:60px;
+	
+}
+
+footer {
+    background-color: #0dff05;
+    padding: 10px;
+    text-align: center;
+}
+
+
+nav ul { 
+	margin: 10px 0; 
+	padding: 0;
+	list-style-type: none; 
+	text-align: center;
+}
+
+nav ul li { 
+	display: inline;
+	margin: 10px 0; 
+		
+}
+
+nav ul li a { 
+	text-decoration: none; 
+	padding: 5px;
+	color: #454440;
+	background-color: #0dff05;
+	
+}
+
+nav ul li a:hover
+{
+color: #a4a9ac;
+background-color: #212121;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+	
+    .column {
+        width: 100%;
+    }
+	
+	footer{
+		background:black;
+		color:white
+	}
+	nav ul{text-align:left}
+	nav ul li{ display:block;  margin:5px 0 }
+	nav ul li a{ display:block; margin:5px 0 }
+	
+}
+
+/* Styling inputs */
+input[type=text], select, textarea {
+width : 100% ;
+padding : 12px ;
+border : 1px solid #ccc ;
+margin-top : 6px ;
+margin-bottom : 16px ;
+resize : vertical ;
+}
+input[type=submit] {
+background-color : #4CAF50 ;
+color : white ;
+padding : 12px 20px ; border : none ;
+cursor : pointer ;
+}
+input[type=submit]:hover {
+background-color : #45a049 ;
+}
+/* Styling the contact container */
+.contact-container {
+background-color : #f2f2f2 ;
+padding : 10px ;
+}
+/* Create two columns that float next to each other */
+.column {
+float : left ;
+width : 50% ;
+margin-top : 6px ;
+padding : 20px ;
+}
+/* Clear floats after the columns */
+.row:after {
+content : "" ;
+display : table ;
+clear : both ;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two
+columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.column2, .column3, input[type=submit] {
+width : 100% ;
+margin-top : 0 ;
+}
+}
+.main_container {
+  height: 46px;
+  width: auto;
+  padding: 3px;
+  margin: 2px;
+  max-width: 300px;
+  background-color: #555555;
+  align-content: center;
+}
+.container_inner {
+  height: auto;
+  border: none;
+  background-color: #555555;
+  max-width: 290px;
+  vertical-align: center;
+  padding-top: 12px;
+  padding-left: 10px;
+  align-content: center;
+}
+ .num_tiles {
+  width:30px;
+  height: 30px;
+  background-color: #888888;
+  color: #ffffff;
+  font-size: 22px;
+  text-align: center;
+  line-height: 20px;
+  padding: 3px;
+  margin: 1.5px;
+  font-family: verdana;
+  vertical-align: center;
+}
+
+.button {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0dff05), color-stop(1, #0dff05));
+	background:-moz-linear-gradient(top, #0dff05 5%, #0dff05 100%);
+	background:-webkit-linear-gradient(top, #0dff05 5%, #0dff05 100%);
+	background:-o-linear-gradient(top, #0dff05 5%, #0dff05 100%);
+	background:-ms-linear-gradient(top, #0dff05 5%, #0dff05 100%);
+	background:linear-gradient(to bottom, #0dff05 5%, #0dff05 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0dff05', endColorstr='#0dff05',GradientType=0);
+	background-color:#0dff05;
+	-moz-border-radius:29px;
+	-webkit-border-radius:29px;
+	border-radius:29px;
+	border:2px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#454440;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:17px;
+	font-weight:bold;
+	font-style:italic;
+	padding:17px 35px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #ffffff));
+	background:-moz-linear-gradient(top, #ffffff 5%, #ffffff 100%);
+	background:-webkit-linear-gradient(top, #ffffff 5%, #ffffff 100%);
+	background:-o-linear-gradient(top, #ffffff 5%, #ffffff 100%);
+	background:-ms-linear-gradient(top, #ffffff 5%, #ffffff 100%);
+	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0);
+	background-color:#ffffff;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
